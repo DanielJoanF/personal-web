@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="glitch-container">
+                <span class="glitch">DANIEL JOAN</span>
+            </h1>
+        </div>
+        <p>Halo my name is Daniel, nice to meet you. I would like to welcome you to with my personal website.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <h1>Mari terhubung dan ciptakan sesuatu yang luar biasa bersama! 🚀</h1>
+                <a href=../article/article.html" class="next-button">Article Saya →</a>
+            </div>
+            <div class="about-stats">
+                <p>Hai, saya Daniel, seorang Siswa yang berfokus pada IT. Dengan pengalaman di bidang Networking, saya menciptakan solusi yang kreatif, fungsional, dan berdampak. Saya percaya bahwa setiap detail memiliki makna, dan itulah yang mendorong saya untuk terus berkarya.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <h1>Selected works 2023-2025</h1>
+
+        <!-- Swiper Slider -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../image/image1.png" alt="Project 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/image2.jpg" alt="Project 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="iamge/image3.jpg" alt="Project 3">
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination dots -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+        <!-- Link Swiper.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        });
+    </script>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:officialdaniel144@gmail.com">officialdaniel144@gmail.com</a></p>
+        <p>Media social: <a href="https://www.instagram.com/dnieljoan_/">Instagram</a> | <a href="https://www.facebook.com/daniel.joan.315">Facebook</a></p>
+
+        <!-- Formulir Kontak -->
+        <form action="submit-form.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Teknologi bukan hanya tentang kode, tapi tentang bagaimana kita mengubah dunia dengannya.</p>
+        <p>&copy; Daniel Joan. All rights reserved 2025</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            background: #f8f9fa;
+            padding: 10px 20px;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .navbar .active {
+            background: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .info-box {
+            background: #e0f2fe;
+            padding: 10px;
+            border-left: 4px solid #0284c7;
+            margin-top: 10px;
+        }
+        .search-box {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Documentation</h2>
+        <ul>
+            <li class="active"><i class="fas fa-rocket"></i> Overview</li>
+            <li>Building Ads</li>
+            <li>Deploying Ads</li>
+            <li>Tracking & Reporting</li>
+            <li>Checklist</li>
+            <li>Selling</li>
+            <li>Integration</li>
+            <li>Reporting</li>
+        </ul>
+    </nav>
+    <main class="content">
+        <input type="text" class="search-box" placeholder="What are you looking for?">
+        <div class="card">
+            <p>📖 Reading time: 5m | 📅 Published: 03/11/2022 | 🔹 Level: Intermediate</p>
+            <h1>Platform overview/ What is Playcart?</h1>
+            <p>Intro text lorem ipsum, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+            <div class="info-box">
+                <i class="fas fa-check-circle"></i> There is more information on this topic on the marketeer’s page. <a href="#">Go to marketeer’s page →</a>
+            </div>
+            <h2>Article Topic 1</h2>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+    </main>
+</body>
+</html>
